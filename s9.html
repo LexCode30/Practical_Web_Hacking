@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>9. JWTs JSON Web Tokens - Practical Web Hacking</title>
+<meta name="description" content="Section 9 of 14 of Practical Web Hacking: JWTs JSON Web Tokens.">
+<meta name="color-scheme" content="dark light">
+<meta name="generator" content="course-site-generator 7.0">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Practical Web Hacking">
+<meta property="og:title" content="9. JWTs JSON Web Tokens - Practical Web Hacking">
+<meta property="og:description" content="Section 9 of 14 of Practical Web Hacking: JWTs JSON Web Tokens.">
+<meta property="og:url" content="https://LexCode30.github.io/Practical_Web_Hacking/s9.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://LexCode30.github.io/Practical_Web_Hacking/s9.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-course="Practical_Web_Hacking" data-course-name="Practical Web Hacking" data-page="s9.html" data-page-kind="section" data-total-videos="59" data-chapter="9" data-prev-page="s8.html" data-next-page="s10.html" data-prev-video="s8.html#v-1dfi26U8xEc85drEfCmSM-dXQp2_h0n4g" data-next-video="s10.html#v-1kic2nxB61oZ2lxmX-9cvArWtGt2EfvBH">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="bg-gradient" aria-hidden="true"></div>
+<div class="floating-shapes" aria-hidden="true"><span class="shape shape-1"></span><span class="shape shape-2"></span><span class="shape shape-3"></span></div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+      <span class="brand-text">
+        <span class="brand-title">Practical Web Hacking</span>
+        <span class="brand-sub">14 sections &middot; 59 videos</span>
+      </span>
+    </a>
+    <nav class="chapter-nav" aria-label="Course sections">
+      <button type="button" class="nav-scroll-btn" id="leftScroll" aria-label="Scroll sections left"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+      <ul class="nav-carousel" id="navCarousel">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <span class="nav-icon"><i class="fas fa-compass" aria-hidden="true"></i></span>
+            <span class="nav-content"><span class="nav-title">Overview</span><span class="nav-subtitle">Start here</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s1.html">
+            <span class="nav-icon"><span class="nav-number">1</span></span>
+            <span class="nav-content"><span class="nav-title">Introduction</span><span class="nav-subtitle">5 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s2.html">
+            <span class="nav-icon"><span class="nav-number">2</span></span>
+            <span class="nav-content"><span class="nav-title">Authentication</span><span class="nav-subtitle">8 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s3.html">
+            <span class="nav-icon"><span class="nav-number">3</span></span>
+            <span class="nav-content"><span class="nav-title">Access Control</span><span class="nav-subtitle">5 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s4.html">
+            <span class="nav-icon"><span class="nav-number">4</span></span>
+            <span class="nav-content"><span class="nav-title">SSRF Server-Side Request Forgery</span><span class="nav-subtitle">4 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s5.html">
+            <span class="nav-icon"><span class="nav-number">5</span></span>
+            <span class="nav-content"><span class="nav-title">SQL Injection</span><span class="nav-subtitle">4 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s6.html">
+            <span class="nav-icon"><span class="nav-number">6</span></span>
+            <span class="nav-content"><span class="nav-title">File Inclusion</span><span class="nav-subtitle">7 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s7.html">
+            <span class="nav-icon"><span class="nav-number">7</span></span>
+            <span class="nav-content"><span class="nav-title">XXE XML External Entity Injection</span><span class="nav-subtitle">5 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s8.html">
+            <span class="nav-icon"><span class="nav-number">8</span></span>
+            <span class="nav-content"><span class="nav-title">XSS JavaScript Injection</span><span class="nav-subtitle">5 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="s9.html" aria-current="page">
+            <span class="nav-icon"><span class="nav-number">9</span></span>
+            <span class="nav-content"><span class="nav-title">JWTs JSON Web Tokens</span><span class="nav-subtitle">5 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s10.html">
+            <span class="nav-icon"><span class="nav-number">10</span></span>
+            <span class="nav-content"><span class="nav-title">Mass Assignment</span><span class="nav-subtitle">1 video</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s11.html">
+            <span class="nav-icon"><span class="nav-number">11</span></span>
+            <span class="nav-content"><span class="nav-title">WebSockets</span><span class="nav-subtitle">2 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s12.html">
+            <span class="nav-icon"><span class="nav-number">12</span></span>
+            <span class="nav-content"><span class="nav-title">Open Redirects</span><span class="nav-subtitle">1 video</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s13.html">
+            <span class="nav-icon"><span class="nav-number">13</span></span>
+            <span class="nav-content"><span class="nav-title">Race Conditions</span><span class="nav-subtitle">4 videos</span></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="s14.html">
+            <span class="nav-icon"><span class="nav-number">14</span></span>
+            <span class="nav-content"><span class="nav-title">Capstone Challenge</span><span class="nav-subtitle">3 videos</span></span>
+          </a>
+        </li>
+      </ul>
+      <button type="button" class="nav-scroll-btn" id="rightScroll" aria-label="Scroll sections right"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="Switch between dark and light theme" title="Switch theme"><i class="fas fa-moon" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</header>
+<a class="floating-nav left-nav" href="s8.html" aria-label="Previous section" data-nav><i class="fas fa-chevron-left" aria-hidden="true"></i></a><a class="floating-nav right-nav" href="s10.html" aria-label="Next section" data-nav><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+<main class="main-container" id="main">
+<div class="section-head glassmorphism">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html"><i class="fas fa-compass" aria-hidden="true"></i> Overview</a>
+    <span aria-hidden="true">/</span>
+    <span class="current">Section 9</span>
+  </nav>
+  <h1 class="page-title">JWTs JSON Web Tokens</h1>
+  <p class="page-meta">Section 9 of 14 &middot; 5 videos</p>
+  <div class="hero-progress">
+    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Section progress" id="pageProgress">
+      <div class="progress-fill" id="pageFill" style="width:0%"></div>
+    </div>
+    <p class="progress-text" id="pageText">0 of 5 videos complete</p>
+  </div>
+</div>
+
+<article class="video-section glassmorphism" id="v-1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl"
+  data-video-id="1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl" data-position="0"
+  data-legacy-page="s9.html" data-legacy-id="section44">
+  <header class="section-header">
+    <div class="video-info">
+      <span class="video-badge">1</span>
+      <div class="video-meta">
+        <h2 class="video-title">Introduction to JWTs</h2>
+        <p class="video-status"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Ready to watch</span></p>
+      </div>
+    </div>
+    <button type="button" class="action-btn complete-btn" aria-pressed="false">
+      <i class="fas fa-circle-check" aria-hidden="true"></i><span class="complete-label">Mark complete</span>
+    </button>
+  </header>
+  <div class="video-container">
+    <div class="video-frame">
+      <iframe class="video-iframe" src="https://drive.google.com/file/d/1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl/preview" title="Introduction to JWTs"
+        allow="autoplay; fullscreen; encrypted-media" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="section-actions">
+    <a class="action-btn nav-btn" data-video-prev href="#"><i class="fas fa-chevron-left" aria-hidden="true"></i><span>Previous video</span></a>
+    <a class="video-open" href="https://drive.google.com/file/d/1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl/view" target="_blank" rel="noopener noreferrer"><i class="fas fa-up-right-from-square" aria-hidden="true"></i><span>Open in Drive</span></a>
+    <a class="action-btn nav-btn" data-video-next href="#"><span>Next video</span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+  </div>
+  <details class="notes-container">
+    <summary class="notes-summary"><i class="fas fa-pen-to-square" aria-hidden="true"></i><span>Your notes</span><span class="notes-flag" hidden>&bull;</span></summary>
+    <div class="notes-body">
+      <div class="notes-tools">
+        <button type="button" class="tool-btn" data-wrap="**" aria-label="Bold selection" title="Bold"><i class="fas fa-bold" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="*" aria-label="Italic selection" title="Italic"><i class="fas fa-italic" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="`" aria-label="Code selection" title="Code"><i class="fas fa-code" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn tool-danger" data-clear aria-label="Clear notes" title="Clear notes"><i class="fas fa-trash" aria-hidden="true"></i></button>
+      </div>
+      <textarea class="notes-input" maxlength="5000" rows="4"
+        placeholder="Write your notes for this video" aria-label="Notes for Introduction to JWTs"></textarea>
+      <p class="notes-counter"><span class="char-count">0</span> / 5000</p>
+    </div>
+  </details>
+</article>
+<article class="video-section glassmorphism" id="v-1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl"
+  data-video-id="1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl" data-position="1"
+  data-legacy-page="s9.html" data-legacy-id="section45">
+  <header class="section-header">
+    <div class="video-info">
+      <span class="video-badge">2</span>
+      <div class="video-meta">
+        <h2 class="video-title">JWT Signature Attacks</h2>
+        <p class="video-status"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Ready to watch</span></p>
+      </div>
+    </div>
+    <button type="button" class="action-btn complete-btn" aria-pressed="false">
+      <i class="fas fa-circle-check" aria-hidden="true"></i><span class="complete-label">Mark complete</span>
+    </button>
+  </header>
+  <div class="video-container">
+    <div class="video-frame">
+      <iframe class="video-iframe" src="https://drive.google.com/file/d/1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl/preview" title="JWT Signature Attacks"
+        allow="autoplay; fullscreen; encrypted-media" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="section-actions">
+    <a class="action-btn nav-btn" data-video-prev href="#"><i class="fas fa-chevron-left" aria-hidden="true"></i><span>Previous video</span></a>
+    <a class="video-open" href="https://drive.google.com/file/d/1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl/view" target="_blank" rel="noopener noreferrer"><i class="fas fa-up-right-from-square" aria-hidden="true"></i><span>Open in Drive</span></a>
+    <a class="action-btn nav-btn" data-video-next href="#"><span>Next video</span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+  </div>
+  <details class="notes-container">
+    <summary class="notes-summary"><i class="fas fa-pen-to-square" aria-hidden="true"></i><span>Your notes</span><span class="notes-flag" hidden>&bull;</span></summary>
+    <div class="notes-body">
+      <div class="notes-tools">
+        <button type="button" class="tool-btn" data-wrap="**" aria-label="Bold selection" title="Bold"><i class="fas fa-bold" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="*" aria-label="Italic selection" title="Italic"><i class="fas fa-italic" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="`" aria-label="Code selection" title="Code"><i class="fas fa-code" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn tool-danger" data-clear aria-label="Clear notes" title="Clear notes"><i class="fas fa-trash" aria-hidden="true"></i></button>
+      </div>
+      <textarea class="notes-input" maxlength="5000" rows="4"
+        placeholder="Write your notes for this video" aria-label="Notes for JWT Signature Attacks"></textarea>
+      <p class="notes-counter"><span class="char-count">0</span> / 5000</p>
+    </div>
+  </details>
+</article>
+<article class="video-section glassmorphism" id="v-1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX"
+  data-video-id="1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX" data-position="2"
+  data-legacy-page="s9.html" data-legacy-id="section46">
+  <header class="section-header">
+    <div class="video-info">
+      <span class="video-badge">3</span>
+      <div class="video-meta">
+        <h2 class="video-title">Challenge Walkthrough</h2>
+        <p class="video-status"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Ready to watch</span></p>
+      </div>
+    </div>
+    <button type="button" class="action-btn complete-btn" aria-pressed="false">
+      <i class="fas fa-circle-check" aria-hidden="true"></i><span class="complete-label">Mark complete</span>
+    </button>
+  </header>
+  <div class="video-container">
+    <div class="video-frame">
+      <iframe class="video-iframe" src="https://drive.google.com/file/d/1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX/preview" title="Challenge Walkthrough"
+        allow="autoplay; fullscreen; encrypted-media" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="section-actions">
+    <a class="action-btn nav-btn" data-video-prev href="#"><i class="fas fa-chevron-left" aria-hidden="true"></i><span>Previous video</span></a>
+    <a class="video-open" href="https://drive.google.com/file/d/1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX/view" target="_blank" rel="noopener noreferrer"><i class="fas fa-up-right-from-square" aria-hidden="true"></i><span>Open in Drive</span></a>
+    <a class="action-btn nav-btn" data-video-next href="#"><span>Next video</span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+  </div>
+  <details class="notes-container">
+    <summary class="notes-summary"><i class="fas fa-pen-to-square" aria-hidden="true"></i><span>Your notes</span><span class="notes-flag" hidden>&bull;</span></summary>
+    <div class="notes-body">
+      <div class="notes-tools">
+        <button type="button" class="tool-btn" data-wrap="**" aria-label="Bold selection" title="Bold"><i class="fas fa-bold" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="*" aria-label="Italic selection" title="Italic"><i class="fas fa-italic" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="`" aria-label="Code selection" title="Code"><i class="fas fa-code" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn tool-danger" data-clear aria-label="Clear notes" title="Clear notes"><i class="fas fa-trash" aria-hidden="true"></i></button>
+      </div>
+      <textarea class="notes-input" maxlength="5000" rows="4"
+        placeholder="Write your notes for this video" aria-label="Notes for Challenge Walkthrough"></textarea>
+      <p class="notes-counter"><span class="char-count">0</span> / 5000</p>
+    </div>
+  </details>
+</article>
+<article class="video-section glassmorphism" id="v-1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2"
+  data-video-id="1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2" data-position="3"
+  data-legacy-page="s9.html" data-legacy-id="section47">
+  <header class="section-header">
+    <div class="video-info">
+      <span class="video-badge">4</span>
+      <div class="video-meta">
+        <h2 class="video-title">JWT Tool</h2>
+        <p class="video-status"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Ready to watch</span></p>
+      </div>
+    </div>
+    <button type="button" class="action-btn complete-btn" aria-pressed="false">
+      <i class="fas fa-circle-check" aria-hidden="true"></i><span class="complete-label">Mark complete</span>
+    </button>
+  </header>
+  <div class="video-container">
+    <div class="video-frame">
+      <iframe class="video-iframe" src="https://drive.google.com/file/d/1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2/preview" title="JWT Tool"
+        allow="autoplay; fullscreen; encrypted-media" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="section-actions">
+    <a class="action-btn nav-btn" data-video-prev href="#"><i class="fas fa-chevron-left" aria-hidden="true"></i><span>Previous video</span></a>
+    <a class="video-open" href="https://drive.google.com/file/d/1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2/view" target="_blank" rel="noopener noreferrer"><i class="fas fa-up-right-from-square" aria-hidden="true"></i><span>Open in Drive</span></a>
+    <a class="action-btn nav-btn" data-video-next href="#"><span>Next video</span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+  </div>
+  <details class="notes-container">
+    <summary class="notes-summary"><i class="fas fa-pen-to-square" aria-hidden="true"></i><span>Your notes</span><span class="notes-flag" hidden>&bull;</span></summary>
+    <div class="notes-body">
+      <div class="notes-tools">
+        <button type="button" class="tool-btn" data-wrap="**" aria-label="Bold selection" title="Bold"><i class="fas fa-bold" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="*" aria-label="Italic selection" title="Italic"><i class="fas fa-italic" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="`" aria-label="Code selection" title="Code"><i class="fas fa-code" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn tool-danger" data-clear aria-label="Clear notes" title="Clear notes"><i class="fas fa-trash" aria-hidden="true"></i></button>
+      </div>
+      <textarea class="notes-input" maxlength="5000" rows="4"
+        placeholder="Write your notes for this video" aria-label="Notes for JWT Tool"></textarea>
+      <p class="notes-counter"><span class="char-count">0</span> / 5000</p>
+    </div>
+  </details>
+</article>
+<article class="video-section glassmorphism" id="v-1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW"
+  data-video-id="1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW" data-position="4"
+  data-legacy-page="s9.html" data-legacy-id="section48">
+  <header class="section-header">
+    <div class="video-info">
+      <span class="video-badge">5</span>
+      <div class="video-meta">
+        <h2 class="video-title">Header Injection</h2>
+        <p class="video-status"><span class="status-dot" aria-hidden="true"></span><span class="status-text">Ready to watch</span></p>
+      </div>
+    </div>
+    <button type="button" class="action-btn complete-btn" aria-pressed="false">
+      <i class="fas fa-circle-check" aria-hidden="true"></i><span class="complete-label">Mark complete</span>
+    </button>
+  </header>
+  <div class="video-container">
+    <div class="video-frame">
+      <iframe class="video-iframe" src="https://drive.google.com/file/d/1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW/preview" title="Header Injection"
+        allow="autoplay; fullscreen; encrypted-media" allowfullscreen loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <div class="section-actions">
+    <a class="action-btn nav-btn" data-video-prev href="#"><i class="fas fa-chevron-left" aria-hidden="true"></i><span>Previous video</span></a>
+    <a class="video-open" href="https://drive.google.com/file/d/1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW/view" target="_blank" rel="noopener noreferrer"><i class="fas fa-up-right-from-square" aria-hidden="true"></i><span>Open in Drive</span></a>
+    <a class="action-btn nav-btn" data-video-next href="#"><span>Next video</span><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+  </div>
+  <details class="notes-container">
+    <summary class="notes-summary"><i class="fas fa-pen-to-square" aria-hidden="true"></i><span>Your notes</span><span class="notes-flag" hidden>&bull;</span></summary>
+    <div class="notes-body">
+      <div class="notes-tools">
+        <button type="button" class="tool-btn" data-wrap="**" aria-label="Bold selection" title="Bold"><i class="fas fa-bold" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="*" aria-label="Italic selection" title="Italic"><i class="fas fa-italic" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn" data-wrap="`" aria-label="Code selection" title="Code"><i class="fas fa-code" aria-hidden="true"></i></button>
+        <button type="button" class="tool-btn tool-danger" data-clear aria-label="Clear notes" title="Clear notes"><i class="fas fa-trash" aria-hidden="true"></i></button>
+      </div>
+      <textarea class="notes-input" maxlength="5000" rows="4"
+        placeholder="Write your notes for this video" aria-label="Notes for Header Injection"></textarea>
+      <p class="notes-counter"><span class="char-count">0</span> / 5000</p>
+    </div>
+  </details>
+</article>
+
+<nav class="pager" aria-label="Section navigation">
+  <a class="pager-link" href="s8.html" data-nav>
+    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+    <span><small>Previous section</small>XSS JavaScript Injection</span>
+  </a>
+  <a class="pager-link pager-next" href="s10.html" data-nav>
+    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+    <span><small>Next section</small>Mass Assignment</span>
+  </a>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <p><a href="index.html">Practical Web Hacking</a> &middot; <a href="https://LexCode30.github.io/all/">All courses</a></p>
+  <p class="footer-note">Progress and notes are stored in this browser only.</p>
+</footer>
+
+<div class="fab-container">
+  <div class="fab-menu" id="fabMenu">
+    <div class="fab-options">
+      <button type="button" class="fab option-fab" id="exportButton" aria-label="Export progress" title="Export progress"><i class="fas fa-download" aria-hidden="true"></i></button>
+      <button type="button" class="fab option-fab" id="importDataButton" aria-label="Import progress" title="Import progress"><i class="fas fa-upload" aria-hidden="true"></i></button>
+      <a class="fab option-fab" href="https://LexCode30.github.io/all/" aria-label="All courses" title="All courses"><i class="fas fa-house" aria-hidden="true"></i></a>
+      <a class="fab option-fab" href="index.html" aria-label="Course overview" title="Course overview"><i class="fas fa-list" aria-hidden="true"></i></a>
+    </div>
+    <button type="button" class="fab main-fab" id="mainFab" aria-expanded="false" aria-label="More actions"><i class="fas fa-plus" aria-hidden="true"></i></button>
+  </div>
+</div>
+
+<input type="file" id="importInput" accept=".json,application/json" hidden>
+<div class="toast-stack" id="toastStack" role="status" aria-live="polite"></div>
+<div class="loading-overlay" id="loadingOverlay" aria-hidden="true"><div class="loading-spinner"><span class="spinner"></span><p>Loading&hellip;</p></div></div>
+<script src="script.js"></script>
+</body>
+</html>

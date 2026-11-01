@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://LexCode30.github.io/Practical_Web_Hacking/sitemap.xml

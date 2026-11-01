@@ -1,0 +1,520 @@
+{
+  "name": "Practical Web Hacking",
+  "slug": "Practical_Web_Hacking",
+  "url": "https://LexCode30.github.io/Practical_Web_Hacking/",
+  "category": "cybersecurity",
+  "generator": "7.0",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Introduction",
+      "page": "s1.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Welcome To The Course",
+          "id": "1_UHgOjCBfeuWc5gwdwUMoBjILv6C-thE",
+          "anchor": "v-1_UHgOjCBfeuWc5gwdwUMoBjILv6C-thE",
+          "href": "s1.html#v-1_UHgOjCBfeuWc5gwdwUMoBjILv6C-thE"
+        },
+        {
+          "number": 2,
+          "title": "Lab Setup",
+          "id": "1_nxG1MP9m7FNQsPN8T_aj6KWHE_jIyRj",
+          "anchor": "v-1_nxG1MP9m7FNQsPN8T_aj6KWHE_jIyRj",
+          "href": "s1.html#v-1_nxG1MP9m7FNQsPN8T_aj6KWHE_jIyRj"
+        },
+        {
+          "number": 3,
+          "title": "Course Support",
+          "id": "1_idtajjA-e8LQxj8ZE3YCnMBKWJqjaWD",
+          "anchor": "v-1_idtajjA-e8LQxj8ZE3YCnMBKWJqjaWD",
+          "href": "s1.html#v-1_idtajjA-e8LQxj8ZE3YCnMBKWJqjaWD"
+        },
+        {
+          "number": 4,
+          "title": "Web Application Components",
+          "id": "1_Yln7PTqOsdxl1ZunZ-sWxGmlDmYbtmw",
+          "anchor": "v-1_Yln7PTqOsdxl1ZunZ-sWxGmlDmYbtmw",
+          "href": "s1.html#v-1_Yln7PTqOsdxl1ZunZ-sWxGmlDmYbtmw"
+        },
+        {
+          "number": 5,
+          "title": "HTTP",
+          "id": "1_oTrNZdJiY5MXIKsxLp2YLT1dZUFNSym",
+          "anchor": "v-1_oTrNZdJiY5MXIKsxLp2YLT1dZUFNSym",
+          "href": "s1.html#v-1_oTrNZdJiY5MXIKsxLp2YLT1dZUFNSym"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Authentication",
+      "page": "s2.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to Authentication",
+          "id": "1_vQTL40FJb45RxhISGMUR031BW8Cbb-6",
+          "anchor": "v-1_vQTL40FJb45RxhISGMUR031BW8Cbb-6",
+          "href": "s2.html#v-1_vQTL40FJb45RxhISGMUR031BW8Cbb-6"
+        },
+        {
+          "number": 2,
+          "title": "Brute-Force Attacks",
+          "id": "1_yyouXM-zyC5Azj5rOCrqUBlptsqdpss",
+          "anchor": "v-1_yyouXM-zyC5Azj5rOCrqUBlptsqdpss",
+          "href": "s2.html#v-1_yyouXM-zyC5Azj5rOCrqUBlptsqdpss"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Walkthrough",
+          "id": "1_zIPjBiW-V7AAlWc_Rq_hM-k6IPUPmih",
+          "anchor": "v-1_zIPjBiW-V7AAlWc_Rq_hM-k6IPUPmih",
+          "href": "s2.html#v-1_zIPjBiW-V7AAlWc_Rq_hM-k6IPUPmih"
+        },
+        {
+          "number": 4,
+          "title": "Response Timings",
+          "id": "1bGCE3XhjM9Dd14pwSWiw5sZ6m8CKC2sZ",
+          "anchor": "v-1bGCE3XhjM9Dd14pwSWiw5sZ6m8CKC2sZ",
+          "href": "s2.html#v-1bGCE3XhjM9Dd14pwSWiw5sZ6m8CKC2sZ"
+        },
+        {
+          "number": 5,
+          "title": "Challenge Walkthrough",
+          "id": "1bNTVW64gb2EWUJTWtc5BBKHgM4-TFqtY",
+          "anchor": "v-1bNTVW64gb2EWUJTWtc5BBKHgM4-TFqtY",
+          "href": "s2.html#v-1bNTVW64gb2EWUJTWtc5BBKHgM4-TFqtY"
+        },
+        {
+          "number": 6,
+          "title": "Session Tokens and Sequencer",
+          "id": "1bOWOvNvLM5IgO8nS4wlE1WfzuDfA2bVC",
+          "anchor": "v-1bOWOvNvLM5IgO8nS4wlE1WfzuDfA2bVC",
+          "href": "s2.html#v-1bOWOvNvLM5IgO8nS4wlE1WfzuDfA2bVC"
+        },
+        {
+          "number": 7,
+          "title": "Multi-Factor Authentication",
+          "id": "1bELbHzLWmqrQfl38RtjecmsXPDddDO2N",
+          "anchor": "v-1bELbHzLWmqrQfl38RtjecmsXPDddDO2N",
+          "href": "s2.html#v-1bELbHzLWmqrQfl38RtjecmsXPDddDO2N"
+        },
+        {
+          "number": 8,
+          "title": "Challenge Walkthrough",
+          "id": "1bUxXNK6iytJT23AE4JTJg3RoAE25Dioq",
+          "anchor": "v-1bUxXNK6iytJT23AE4JTJg3RoAE25Dioq",
+          "href": "s2.html#v-1bUxXNK6iytJT23AE4JTJg3RoAE25Dioq"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Access Control",
+      "page": "s3.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to Access Control",
+          "id": "1bYNSQPu6VARsHOyWRMwREK_mcXScLkUA",
+          "anchor": "v-1bYNSQPu6VARsHOyWRMwREK_mcXScLkUA",
+          "href": "s3.html#v-1bYNSQPu6VARsHOyWRMwREK_mcXScLkUA"
+        },
+        {
+          "number": 2,
+          "title": "IDOR Insecure Direct Object Reference",
+          "id": "1bYQcuf6Il9dDs-hw775t3_vKhWzB-Gnx",
+          "anchor": "v-1bYQcuf6Il9dDs-hw775t3_vKhWzB-Gnx",
+          "href": "s3.html#v-1bYQcuf6Il9dDs-hw775t3_vKhWzB-Gnx"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Walkthrough",
+          "id": "1bkC-U_X-hn-FPd67yFN2y364Vxh9vGZH",
+          "anchor": "v-1bkC-U_X-hn-FPd67yFN2y364Vxh9vGZH",
+          "href": "s3.html#v-1bkC-U_X-hn-FPd67yFN2y364Vxh9vGZH"
+        },
+        {
+          "number": 4,
+          "title": "Attacking Weak Access Controls",
+          "id": "1bko9xzqWlYQ-_hgzVtS-UnB3vHwJh-Cj",
+          "anchor": "v-1bko9xzqWlYQ-_hgzVtS-UnB3vHwJh-Cj",
+          "href": "s3.html#v-1bko9xzqWlYQ-_hgzVtS-UnB3vHwJh-Cj"
+        },
+        {
+          "number": 5,
+          "title": "Challenge Walkthrough",
+          "id": "1bvTInxaaxylbtkiFwLqX8xZ3KoNLxTQK",
+          "anchor": "v-1bvTInxaaxylbtkiFwLqX8xZ3KoNLxTQK",
+          "href": "s3.html#v-1bvTInxaaxylbtkiFwLqX8xZ3KoNLxTQK"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "SSRF Server-Side Request Forgery",
+      "page": "s4.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to SSRF",
+          "id": "1bx2nbg3JjJn1Esst4VLrAS7gLzo6ShNT",
+          "anchor": "v-1bx2nbg3JjJn1Esst4VLrAS7gLzo6ShNT",
+          "href": "s4.html#v-1bx2nbg3JjJn1Esst4VLrAS7gLzo6ShNT"
+        },
+        {
+          "number": 2,
+          "title": "Challenge Walkthrough feat. Turbo Intruder",
+          "id": "1c2aQeVCSZmO953Z9MwBpGfDH8xpKpw6c",
+          "anchor": "v-1c2aQeVCSZmO953Z9MwBpGfDH8xpKpw6c",
+          "href": "s4.html#v-1c2aQeVCSZmO953Z9MwBpGfDH8xpKpw6c"
+        },
+        {
+          "number": 3,
+          "title": "Blind SSRF",
+          "id": "1c69huT0BQ2ITJwnbP-rF6aXjSfO6UgGO",
+          "anchor": "v-1c69huT0BQ2ITJwnbP-rF6aXjSfO6UgGO",
+          "href": "s4.html#v-1c69huT0BQ2ITJwnbP-rF6aXjSfO6UgGO"
+        },
+        {
+          "number": 4,
+          "title": "Challenge Walkthrough",
+          "id": "1cCXWft-x5Cfw_p7wS29sJ5IgRA7-2a3B",
+          "anchor": "v-1cCXWft-x5Cfw_p7wS29sJ5IgRA7-2a3B",
+          "href": "s4.html#v-1cCXWft-x5Cfw_p7wS29sJ5IgRA7-2a3B"
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "title": "SQL Injection",
+      "page": "s5.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to SQL Injection",
+          "id": "1cCexE_VVEKsBjam74DyIwFJfBngUE19c",
+          "anchor": "v-1cCexE_VVEKsBjam74DyIwFJfBngUE19c",
+          "href": "s5.html#v-1cCexE_VVEKsBjam74DyIwFJfBngUE19c"
+        },
+        {
+          "number": 2,
+          "title": "Blind SQL Injection",
+          "id": "1cOVNLmaOUh5vSlA9U3rxub893GPbj0aw",
+          "anchor": "v-1cOVNLmaOUh5vSlA9U3rxub893GPbj0aw",
+          "href": "s5.html#v-1cOVNLmaOUh5vSlA9U3rxub893GPbj0aw"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Waklthrough",
+          "id": "1cStptNi94anKCVIUHbRytzHbqVppvbl_",
+          "anchor": "v-1cStptNi94anKCVIUHbRytzHbqVppvbl_",
+          "href": "s5.html#v-1cStptNi94anKCVIUHbRytzHbqVppvbl_"
+        },
+        {
+          "number": 4,
+          "title": "NoSQL Injection",
+          "id": "1cUpDzj1Yo-I-x32HpsbCQ_AHC9YOpL2d",
+          "anchor": "v-1cUpDzj1Yo-I-x32HpsbCQ_AHC9YOpL2d",
+          "href": "s5.html#v-1cUpDzj1Yo-I-x32HpsbCQ_AHC9YOpL2d"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "title": "File Inclusion",
+      "page": "s6.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to File Inclusion",
+          "id": "1cW_qWZ7P1TrNYX9D27kRD5AdacpsyQqz",
+          "anchor": "v-1cW_qWZ7P1TrNYX9D27kRD5AdacpsyQqz",
+          "href": "s6.html#v-1cW_qWZ7P1TrNYX9D27kRD5AdacpsyQqz"
+        },
+        {
+          "number": 2,
+          "title": "File Inclusion Payloads",
+          "id": "1c2K4II5H17SfC7ACTZpGtgIrBw6ezB00",
+          "anchor": "v-1c2K4II5H17SfC7ACTZpGtgIrBw6ezB00",
+          "href": "s6.html#v-1c2K4II5H17SfC7ACTZpGtgIrBw6ezB00"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Walkthrough",
+          "id": "1ciQXEANBQ1m7dPojp4tvt8-VsbuAM7ym",
+          "anchor": "v-1ciQXEANBQ1m7dPojp4tvt8-VsbuAM7ym",
+          "href": "s6.html#v-1ciQXEANBQ1m7dPojp4tvt8-VsbuAM7ym"
+        },
+        {
+          "number": 4,
+          "title": "Bypassing Filters",
+          "id": "1caN1vlbfVG7e8t-F6czqHKmSZAlnuLUK",
+          "anchor": "v-1caN1vlbfVG7e8t-F6czqHKmSZAlnuLUK",
+          "href": "s6.html#v-1caN1vlbfVG7e8t-F6czqHKmSZAlnuLUK"
+        },
+        {
+          "number": 5,
+          "title": "File Inclusion to RCE",
+          "id": "1c3w0YTOCaddoJ8D5-43Jvp9VkWbFLuyb",
+          "anchor": "v-1c3w0YTOCaddoJ8D5-43Jvp9VkWbFLuyb",
+          "href": "s6.html#v-1c3w0YTOCaddoJ8D5-43Jvp9VkWbFLuyb"
+        },
+        {
+          "number": 6,
+          "title": "Challenge Walkthrough",
+          "id": "1d7JcXTE71A1UAhk7D3hOybYelXzIxwYU",
+          "anchor": "v-1d7JcXTE71A1UAhk7D3hOybYelXzIxwYU",
+          "href": "s6.html#v-1d7JcXTE71A1UAhk7D3hOybYelXzIxwYU"
+        },
+        {
+          "number": 7,
+          "title": "File Inclusion Prevention",
+          "id": "1cQFG-zW_3G2w-ZBZb395ZR0E7AKdrZhg",
+          "anchor": "v-1cQFG-zW_3G2w-ZBZb395ZR0E7AKdrZhg",
+          "href": "s6.html#v-1cQFG-zW_3G2w-ZBZb395ZR0E7AKdrZhg"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "XXE XML External Entity Injection",
+      "page": "s7.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to XXE",
+          "id": "1dATT4q3zNeiPVuzTUsZlNAhUDBDCdkaI",
+          "anchor": "v-1dATT4q3zNeiPVuzTUsZlNAhUDBDCdkaI",
+          "href": "s7.html#v-1dATT4q3zNeiPVuzTUsZlNAhUDBDCdkaI"
+        },
+        {
+          "number": 2,
+          "title": "Common XXE Attacks",
+          "id": "1d5r3cX1f574XYD_u4GKaSFfRvXnUazlw",
+          "anchor": "v-1d5r3cX1f574XYD_u4GKaSFfRvXnUazlw",
+          "href": "s7.html#v-1d5r3cX1f574XYD_u4GKaSFfRvXnUazlw"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Walkthrough",
+          "id": "1dDgGY6YI5VREqslcL8_wIhi8NGAaHWJ4",
+          "anchor": "v-1dDgGY6YI5VREqslcL8_wIhi8NGAaHWJ4",
+          "href": "s7.html#v-1dDgGY6YI5VREqslcL8_wIhi8NGAaHWJ4"
+        },
+        {
+          "number": 4,
+          "title": "XXE via XInclude",
+          "id": "1cuTA8jewdyYIrKgNLnWp9ZASaFFYg3Lo",
+          "anchor": "v-1cuTA8jewdyYIrKgNLnWp9ZASaFFYg3Lo",
+          "href": "s7.html#v-1cuTA8jewdyYIrKgNLnWp9ZASaFFYg3Lo"
+        },
+        {
+          "number": 5,
+          "title": "Challenge Walkthrough",
+          "id": "1dEjsvDCXLO1BTyWFwf6PZfXSgSxv0bst",
+          "anchor": "v-1dEjsvDCXLO1BTyWFwf6PZfXSgSxv0bst",
+          "href": "s7.html#v-1dEjsvDCXLO1BTyWFwf6PZfXSgSxv0bst"
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "title": "XSS JavaScript Injection",
+      "page": "s8.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to XSS",
+          "id": "1dHwwhvf8zIuwjBTNb5FkD8ct8kWnPE4w",
+          "anchor": "v-1dHwwhvf8zIuwjBTNb5FkD8ct8kWnPE4w",
+          "href": "s8.html#v-1dHwwhvf8zIuwjBTNb5FkD8ct8kWnPE4w"
+        },
+        {
+          "number": 2,
+          "title": "DOM Invader",
+          "id": "1dQ8qTZUPERPdN7YXIOPK62cXb_u5iiBb",
+          "anchor": "v-1dQ8qTZUPERPdN7YXIOPK62cXb_u5iiBb",
+          "href": "s8.html#v-1dQ8qTZUPERPdN7YXIOPK62cXb_u5iiBb"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Walkthrough",
+          "id": "1dcswjxYr0-ZA3k1ZXhWFLoCi1Ivi3-co",
+          "anchor": "v-1dcswjxYr0-ZA3k1ZXhWFLoCi1Ivi3-co",
+          "href": "s8.html#v-1dcswjxYr0-ZA3k1ZXhWFLoCi1Ivi3-co"
+        },
+        {
+          "number": 4,
+          "title": "Going Beyond alert 1",
+          "id": "1dehOUZac75i8UUfpMSzvDMZkAKCziB8j",
+          "anchor": "v-1dehOUZac75i8UUfpMSzvDMZkAKCziB8j",
+          "href": "s8.html#v-1dehOUZac75i8UUfpMSzvDMZkAKCziB8j"
+        },
+        {
+          "number": 5,
+          "title": "Filter and WAF Evasion Techniques",
+          "id": "1dfi26U8xEc85drEfCmSM-dXQp2_h0n4g",
+          "anchor": "v-1dfi26U8xEc85drEfCmSM-dXQp2_h0n4g",
+          "href": "s8.html#v-1dfi26U8xEc85drEfCmSM-dXQp2_h0n4g"
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "JWTs JSON Web Tokens",
+      "page": "s9.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to JWTs",
+          "id": "1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl",
+          "anchor": "v-1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl",
+          "href": "s9.html#v-1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl"
+        },
+        {
+          "number": 2,
+          "title": "JWT Signature Attacks",
+          "id": "1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl",
+          "anchor": "v-1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl",
+          "href": "s9.html#v-1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl"
+        },
+        {
+          "number": 3,
+          "title": "Challenge Walkthrough",
+          "id": "1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX",
+          "anchor": "v-1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX",
+          "href": "s9.html#v-1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX"
+        },
+        {
+          "number": 4,
+          "title": "JWT Tool",
+          "id": "1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2",
+          "anchor": "v-1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2",
+          "href": "s9.html#v-1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2"
+        },
+        {
+          "number": 5,
+          "title": "Header Injection",
+          "id": "1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW",
+          "anchor": "v-1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW",
+          "href": "s9.html#v-1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW"
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Mass Assignment",
+      "page": "s10.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Mass Assignment",
+          "id": "1kic2nxB61oZ2lxmX-9cvArWtGt2EfvBH",
+          "anchor": "v-1kic2nxB61oZ2lxmX-9cvArWtGt2EfvBH",
+          "href": "s10.html#v-1kic2nxB61oZ2lxmX-9cvArWtGt2EfvBH"
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "title": "WebSockets",
+      "page": "s11.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to WebSockets",
+          "id": "1knl3JTua-_nPrhWEz2sfywFYs8SsY7js",
+          "anchor": "v-1knl3JTua-_nPrhWEz2sfywFYs8SsY7js",
+          "href": "s11.html#v-1knl3JTua-_nPrhWEz2sfywFYs8SsY7js"
+        },
+        {
+          "number": 2,
+          "title": "WebSocket Hijacking",
+          "id": "1koaCQoZJvIqc1EvRaj3MQ0-OsovSlkQ6",
+          "anchor": "v-1koaCQoZJvIqc1EvRaj3MQ0-OsovSlkQ6",
+          "href": "s11.html#v-1koaCQoZJvIqc1EvRaj3MQ0-OsovSlkQ6"
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Open Redirects",
+      "page": "s12.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Open Redirects",
+          "id": "1kvVuv_pC8g5kDO9yjipyQatiJhUHiROQ",
+          "anchor": "v-1kvVuv_pC8g5kDO9yjipyQatiJhUHiROQ",
+          "href": "s12.html#v-1kvVuv_pC8g5kDO9yjipyQatiJhUHiROQ"
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Race Conditions",
+      "page": "s13.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Introduction to Race Conditions",
+          "id": "1l4r7X_VLNJac1OIK7Jh7Ntj-DkRys1ma",
+          "anchor": "v-1l4r7X_VLNJac1OIK7Jh7Ntj-DkRys1ma",
+          "href": "s13.html#v-1l4r7X_VLNJac1OIK7Jh7Ntj-DkRys1ma"
+        },
+        {
+          "number": 2,
+          "title": "Single Endpoint Race Conditions",
+          "id": "1lALYLG2sP-xsoDCY810ulbkMaSoxpASO",
+          "anchor": "v-1lALYLG2sP-xsoDCY810ulbkMaSoxpASO",
+          "href": "s13.html#v-1lALYLG2sP-xsoDCY810ulbkMaSoxpASO"
+        },
+        {
+          "number": 3,
+          "title": "Multi-Endpoint Race Conditions",
+          "id": "1l4Qoa_Nt-Syths2ZksuTaU9AmznwyZ1q",
+          "anchor": "v-1l4Qoa_Nt-Syths2ZksuTaU9AmznwyZ1q",
+          "href": "s13.html#v-1l4Qoa_Nt-Syths2ZksuTaU9AmznwyZ1q"
+        },
+        {
+          "number": 4,
+          "title": "Challenge Walkthrough",
+          "id": "1lGtWNp9PG5xNCo4bGZrKO7Ubxuc4OKFp",
+          "anchor": "v-1lGtWNp9PG5xNCo4bGZrKO7Ubxuc4OKFp",
+          "href": "s13.html#v-1lGtWNp9PG5xNCo4bGZrKO7Ubxuc4OKFp"
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Capstone Challenge",
+      "page": "s14.html",
+      "videos": [
+        {
+          "number": 1,
+          "title": "Launching the Capstone",
+          "id": "1lONxhhq0o4UIZHiwf36vhgSX-ov6F6mB",
+          "anchor": "v-1lONxhhq0o4UIZHiwf36vhgSX-ov6F6mB",
+          "href": "s14.html#v-1lONxhhq0o4UIZHiwf36vhgSX-ov6F6mB"
+        },
+        {
+          "number": 2,
+          "title": "Capstone Walkthrough",
+          "id": "1lPohtIOL1iEJMeXWkTX_IO5FSLob8CSB",
+          "anchor": "v-1lPohtIOL1iEJMeXWkTX_IO5FSLob8CSB",
+          "href": "s14.html#v-1lPohtIOL1iEJMeXWkTX_IO5FSLob8CSB"
+        },
+        {
+          "number": 3,
+          "title": "Thank you & see you next time",
+          "id": "1mb_mPJaq3rlXUPnDeV_hKuzm7diYwmpB",
+          "anchor": "v-1mb_mPJaq3rlXUPnDeV_hKuzm7diYwmpB",
+          "href": "s14.html#v-1mb_mPJaq3rlXUPnDeV_hKuzm7diYwmpB"
+        }
+      ]
+    }
+  ]
+}

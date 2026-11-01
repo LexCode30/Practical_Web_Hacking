@@ -1,0 +1,88 @@
+# Practical Web Hacking
+
+1. Introduction  [s1.html]
+    001. Welcome To The Course  ->  https://drive.google.com/file/d/1_UHgOjCBfeuWc5gwdwUMoBjILv6C-thE/preview
+    002. Lab Setup  ->  https://drive.google.com/file/d/1_nxG1MP9m7FNQsPN8T_aj6KWHE_jIyRj/preview
+    003. Course Support  ->  https://drive.google.com/file/d/1_idtajjA-e8LQxj8ZE3YCnMBKWJqjaWD/preview
+    004. Web Application Components  ->  https://drive.google.com/file/d/1_Yln7PTqOsdxl1ZunZ-sWxGmlDmYbtmw/preview
+    005. HTTP  ->  https://drive.google.com/file/d/1_oTrNZdJiY5MXIKsxLp2YLT1dZUFNSym/preview
+
+2. Authentication  [s2.html]
+    001. Introduction to Authentication  ->  https://drive.google.com/file/d/1_vQTL40FJb45RxhISGMUR031BW8Cbb-6/preview
+    002. Brute-Force Attacks  ->  https://drive.google.com/file/d/1_yyouXM-zyC5Azj5rOCrqUBlptsqdpss/preview
+    003. Challenge Walkthrough  ->  https://drive.google.com/file/d/1_zIPjBiW-V7AAlWc_Rq_hM-k6IPUPmih/preview
+    004. Response Timings  ->  https://drive.google.com/file/d/1bGCE3XhjM9Dd14pwSWiw5sZ6m8CKC2sZ/preview
+    005. Challenge Walkthrough  ->  https://drive.google.com/file/d/1bNTVW64gb2EWUJTWtc5BBKHgM4-TFqtY/preview
+    006. Session Tokens and Sequencer  ->  https://drive.google.com/file/d/1bOWOvNvLM5IgO8nS4wlE1WfzuDfA2bVC/preview
+    007. Multi-Factor Authentication  ->  https://drive.google.com/file/d/1bELbHzLWmqrQfl38RtjecmsXPDddDO2N/preview
+    008. Challenge Walkthrough  ->  https://drive.google.com/file/d/1bUxXNK6iytJT23AE4JTJg3RoAE25Dioq/preview
+
+3. Access Control  [s3.html]
+    001. Introduction to Access Control  ->  https://drive.google.com/file/d/1bYNSQPu6VARsHOyWRMwREK_mcXScLkUA/preview
+    002. IDOR Insecure Direct Object Reference  ->  https://drive.google.com/file/d/1bYQcuf6Il9dDs-hw775t3_vKhWzB-Gnx/preview
+    003. Challenge Walkthrough  ->  https://drive.google.com/file/d/1bkC-U_X-hn-FPd67yFN2y364Vxh9vGZH/preview
+    004. Attacking Weak Access Controls  ->  https://drive.google.com/file/d/1bko9xzqWlYQ-_hgzVtS-UnB3vHwJh-Cj/preview
+    005. Challenge Walkthrough  ->  https://drive.google.com/file/d/1bvTInxaaxylbtkiFwLqX8xZ3KoNLxTQK/preview
+
+4. SSRF Server-Side Request Forgery  [s4.html]
+    001. Introduction to SSRF  ->  https://drive.google.com/file/d/1bx2nbg3JjJn1Esst4VLrAS7gLzo6ShNT/preview
+    002. Challenge Walkthrough feat. Turbo Intruder  ->  https://drive.google.com/file/d/1c2aQeVCSZmO953Z9MwBpGfDH8xpKpw6c/preview
+    003. Blind SSRF  ->  https://drive.google.com/file/d/1c69huT0BQ2ITJwnbP-rF6aXjSfO6UgGO/preview
+    004. Challenge Walkthrough  ->  https://drive.google.com/file/d/1cCXWft-x5Cfw_p7wS29sJ5IgRA7-2a3B/preview
+
+5. SQL Injection  [s5.html]
+    001. Introduction to SQL Injection  ->  https://drive.google.com/file/d/1cCexE_VVEKsBjam74DyIwFJfBngUE19c/preview
+    002. Blind SQL Injection  ->  https://drive.google.com/file/d/1cOVNLmaOUh5vSlA9U3rxub893GPbj0aw/preview
+    003. Challenge Waklthrough  ->  https://drive.google.com/file/d/1cStptNi94anKCVIUHbRytzHbqVppvbl_/preview
+    004. NoSQL Injection  ->  https://drive.google.com/file/d/1cUpDzj1Yo-I-x32HpsbCQ_AHC9YOpL2d/preview
+
+6. File Inclusion  [s6.html]
+    001. Introduction to File Inclusion  ->  https://drive.google.com/file/d/1cW_qWZ7P1TrNYX9D27kRD5AdacpsyQqz/preview
+    002. File Inclusion Payloads  ->  https://drive.google.com/file/d/1c2K4II5H17SfC7ACTZpGtgIrBw6ezB00/preview
+    003. Challenge Walkthrough  ->  https://drive.google.com/file/d/1ciQXEANBQ1m7dPojp4tvt8-VsbuAM7ym/preview
+    004. Bypassing Filters  ->  https://drive.google.com/file/d/1caN1vlbfVG7e8t-F6czqHKmSZAlnuLUK/preview
+    005. File Inclusion to RCE  ->  https://drive.google.com/file/d/1c3w0YTOCaddoJ8D5-43Jvp9VkWbFLuyb/preview
+    006. Challenge Walkthrough  ->  https://drive.google.com/file/d/1d7JcXTE71A1UAhk7D3hOybYelXzIxwYU/preview
+    007. File Inclusion Prevention  ->  https://drive.google.com/file/d/1cQFG-zW_3G2w-ZBZb395ZR0E7AKdrZhg/preview
+
+7. XXE XML External Entity Injection  [s7.html]
+    001. Introduction to XXE  ->  https://drive.google.com/file/d/1dATT4q3zNeiPVuzTUsZlNAhUDBDCdkaI/preview
+    002. Common XXE Attacks  ->  https://drive.google.com/file/d/1d5r3cX1f574XYD_u4GKaSFfRvXnUazlw/preview
+    003. Challenge Walkthrough  ->  https://drive.google.com/file/d/1dDgGY6YI5VREqslcL8_wIhi8NGAaHWJ4/preview
+    004. XXE via XInclude  ->  https://drive.google.com/file/d/1cuTA8jewdyYIrKgNLnWp9ZASaFFYg3Lo/preview
+    005. Challenge Walkthrough  ->  https://drive.google.com/file/d/1dEjsvDCXLO1BTyWFwf6PZfXSgSxv0bst/preview
+
+8. XSS JavaScript Injection  [s8.html]
+    001. Introduction to XSS  ->  https://drive.google.com/file/d/1dHwwhvf8zIuwjBTNb5FkD8ct8kWnPE4w/preview
+    002. DOM Invader  ->  https://drive.google.com/file/d/1dQ8qTZUPERPdN7YXIOPK62cXb_u5iiBb/preview
+    003. Challenge Walkthrough  ->  https://drive.google.com/file/d/1dcswjxYr0-ZA3k1ZXhWFLoCi1Ivi3-co/preview
+    004. Going Beyond alert 1  ->  https://drive.google.com/file/d/1dehOUZac75i8UUfpMSzvDMZkAKCziB8j/preview
+    005. Filter and WAF Evasion Techniques  ->  https://drive.google.com/file/d/1dfi26U8xEc85drEfCmSM-dXQp2_h0n4g/preview
+
+9. JWTs JSON Web Tokens  [s9.html]
+    001. Introduction to JWTs  ->  https://drive.google.com/file/d/1dkQ302Gh3-h9LGuE4SRSZF6iMqd8ShOl/preview
+    002. JWT Signature Attacks  ->  https://drive.google.com/file/d/1dpXH60PX4O-YCLcnRRLmT704qNbJX3Gl/preview
+    003. Challenge Walkthrough  ->  https://drive.google.com/file/d/1kDHgGlKwF9fwhFu8gmR72cCmM70a8axX/preview
+    004. JWT Tool  ->  https://drive.google.com/file/d/1kYtfA1LIcZ-URjwFT6-y8_Pi5ygceaH2/preview
+    005. Header Injection  ->  https://drive.google.com/file/d/1kaANU2tVGbZNMfiXhJTsOsu3YLxewffW/preview
+
+10. Mass Assignment  [s10.html]
+    001. Mass Assignment  ->  https://drive.google.com/file/d/1kic2nxB61oZ2lxmX-9cvArWtGt2EfvBH/preview
+
+11. WebSockets  [s11.html]
+    001. Introduction to WebSockets  ->  https://drive.google.com/file/d/1knl3JTua-_nPrhWEz2sfywFYs8SsY7js/preview
+    002. WebSocket Hijacking  ->  https://drive.google.com/file/d/1koaCQoZJvIqc1EvRaj3MQ0-OsovSlkQ6/preview
+
+12. Open Redirects  [s12.html]
+    001. Open Redirects  ->  https://drive.google.com/file/d/1kvVuv_pC8g5kDO9yjipyQatiJhUHiROQ/preview
+
+13. Race Conditions  [s13.html]
+    001. Introduction to Race Conditions  ->  https://drive.google.com/file/d/1l4r7X_VLNJac1OIK7Jh7Ntj-DkRys1ma/preview
+    002. Single Endpoint Race Conditions  ->  https://drive.google.com/file/d/1lALYLG2sP-xsoDCY810ulbkMaSoxpASO/preview
+    003. Multi-Endpoint Race Conditions  ->  https://drive.google.com/file/d/1l4Qoa_Nt-Syths2ZksuTaU9AmznwyZ1q/preview
+    004. Challenge Walkthrough  ->  https://drive.google.com/file/d/1lGtWNp9PG5xNCo4bGZrKO7Ubxuc4OKFp/preview
+
+14. Capstone Challenge  [s14.html]
+    001. Launching the Capstone  ->  https://drive.google.com/file/d/1lONxhhq0o4UIZHiwf36vhgSX-ov6F6mB/preview
+    002. Capstone Walkthrough  ->  https://drive.google.com/file/d/1lPohtIOL1iEJMeXWkTX_IO5FSLob8CSB/preview
+    003. Thank you & see you next time  ->  https://drive.google.com/file/d/1mb_mPJaq3rlXUPnDeV_hKuzm7diYwmpB/preview
